@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="./images/Pet-Paradise-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Pet Paradise</div>
+        <nav class="nav-links" id="navbar">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Collection</a>
+            <a href="#">Blog</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <a href="#" class="close-btn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+        </nav>
+        <div class="right-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <div class="menu-toggle" onclick="openNav()"><i class="fa fa-bars"></i></div>
+    </header>
+    <section class="section-a">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img class="slideimages" src="./images/slider images/i want light  orange (0).jpg" alt="Image 0">
+                <img class="slideimages" src="./images/slider images/i want light  orange (1).jpg" alt="Image 1">
+                <img class="slideimages" src="./images/slider images/i want light  orange (2).jpg" alt="Image 2">
+                <img class="slideimages" src="./images/slider images/i want light  orange (3).jpg" alt="Image 3">
+                <img class="slideimages" src="./images/slider images/i want light  orange (4).jpg" alt="Image 4">
+                <img class="slideimages" src="./images/slider images/i want light  orange (5).jpg" alt="Image 5">
+                <img class="slideimages" src="./images/slider images/i want light  orange (6).jpg" alt="Image 6">
+                <img class="slideimages" src="./images/slider images/i want light  orange (7).jpg" alt="Image 7">
+                <img class="slideimages" src="./images/slider images/i want light  orange (8).jpg" alt="Image 8">
+                <img class="slideimages" src="./images/slider images/i want light  orange (9).jpg" alt="Image 9">
+                <img class="slideimages" src="./images/slider images/i want light  orange (10).jpg" alt="Image 10">
+                <img class="slideimages" src="./images/slider images/i want light  orange (11).jpg" alt="Image 11">
+                <img class="slideimages" src="./images/slider images/i want light  orange (12).jpg" alt="Image 12">
+                <img class="slideimages" src="./images/slider images/i want light  orange (13).jpg" alt="Image 13">
+                <img class="slideimages" src="./images/slider images/i want light  orange (14).jpg" alt="Image 14">
+                <img class="slideimages" src="./images/slider images/i want light  orange (15).jpg" alt="Image 15">
+                <img class="slideimages" src="./images/slider images/i want light  orange (16).jpg" alt="Image 16">
+                <img class="slideimages" src="./images/slider images/i want light  orange (17).jpg" alt="Image 17">
+                <img class="slideimages" src="./images/slider images/i want light  orange (18).jpg" alt="Image 18">
+                <img class="slideimages" src="./images/slider images/i want light  orange (19).jpg" alt="Image 19">
+                <img class="slideimages" src="./images/slider images/i want light  orange (20).jpg" alt="Image 20">
+                <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="next" onclick="plusSlides(1)">&#10095;</div>
+            </div>
+        </div>
+        <div class="slide-content">
+            <h1>High-Quality PetFood</h1>
+            <p>Sale up to 40% offer</p>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+    </section>
+   <section class="section-b">
+    <h1>Pet<span> Categories</span></h1>
+    <div class="pet-categories">
+        <div class="pet-category" id="dog">
+            <a href="./All-product-section.html"><img src="./images/pet-categries/dog.png" alt="Dog"></a>
+        </div>
+        <div class="pet-category" id="cat">
+            <a href="./All-product-section.html"><img src="./images/pet-categries/cat.png" alt="Cat"></a>
+        </div>
+        <div class="pet-category" id="bird">
+            <a href="./All-product-section.html"><img src="./images/pet-categries/bird.png" alt="Bird"></a>
+        </div>
+        <div class="pet-category" id="fish">
+            <a href="./All-product-section.html"><img src="./images/pet-categries/fish.png" alt="Fish"></a>
+        </div>
+        <div class="pet-category" id="rabbit">
+            <a href="./All-product-section.html"><img src="./images/pet-categries/rabbit.png" alt="Rabbit"></a>
+        </div>
+        <div class="pet-category" id="Guinea-pig">
+            <a href="./All-product-section.html"><img src="./images/pet-categries/hamster and guinea pig.png" alt="Guinea pig"></a>
+        </div>
+    </div>
+   </section>
+   <section>
+       <h1>Coupon<span> Sections</span></h1>
+       <div class="coupons">
+            <div class="coupon">
+                <h3><b>₹ 5000/- off</b></h3>
+                <h6>On minimum spend of ₹ 35000/-</h6>
+                <h5>Use code:</h5>
+                <button class="coupon-btn" data-amount="5000">GET 5000</button>
+            </div>
+            <div class="coupon">
+                <h3><b>₹ 2000/- off</b></h3>
+                <h6>On minimum spend of ₹ 15000/-</h6>
+                <h5>Use code:</h5>
+                <button class="coupon-btn" data-amount="2000">GET 2000</button>
+            </div>
+            <div class="coupon">
+                <h3><b>₹ 1000/- off</b></h3>
+                <h6>On minimum spend of ₹ 10000/-</h6>
+                <h5>Use code:</h5>
+                <button class="coupon-btn" data-amount="1000">GET 1000</button>
+            </div>
+            <div class="coupon">
+                <h3><b>₹ 500/- off</b></h3>
+                <h6>On minimum spend of ₹ 5000/-</h6>
+                <h5>Use code:</h5>
+                <button class="coupon-btn" data-amount="500">GET 500</button>
+            </div>
+       </div>
+   </section>
+   <section>
+    <h1 id="Blog">Carts<span> Section</span></h1>
+    <div class="cart-items">
+        <div class="cart-item custom-class1">
+            <img src="./images/banner-images/offer-banner-1.jpg" alt="Dog Food">
+            <div class="description">
+                <p>High-quality food for your furry friend. Best Animal-based Dog Food.Rich in Minerals and Nutrients.Tasty and Natural Pet Food.Emphasis on High-Quality Premium Ingredients.Nutrition for Every Life Stage.</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+        <div class="cart-item custom-class2">
+            <img src="./images/banner-images/offer-banner-2.jpg" alt="Cat Treats">
+            <div class="description">
+                <p>Delicious treats for your feline companion.Drools Real Chicken Creamy Cat Treats.Kitty Licks Chicken Tuna CatmTreats.Drools Salmon & Skipjack Creamy Cat Treats.</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+        <div class="cart-item custom-class3">
+            <img src="./images/banner-images/offer-banner-3.jpg" alt="Bird Seeds">
+            <div class="description">
+                <p>Nutritious seeds and treats for your feathered friend.Kaytee Jars - Fruit and Veggie, Orange Blossom Honey Treat, Oats Groats, Mixed Nuts and Cherries.Brown's - Tropical Carnival, Parrot and Macaw, Cocatiel.</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </div> 
+   </section>
+   <section>
+    <h1 id="Blog">Products<span> Section</span></h1>
+    <div class="items">
+        <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/birdfood-1.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+        </div>
+        <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/birdfood-2.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/catfood-2.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/fishfood-1.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/rabbitfood-2.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/Guinea pigfood-1.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/fishfood-2.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/pngegg-2.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/Bird Swing Bead Wood Clothing Accessories.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/Ball Dog grooming.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/Dog Cat Veterinarian Veterinary medicine.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+          <div class="box-1">
+            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="price">&#8377; 500</div>
+            <h4>Up to <span>20% off</span></h4>
+            <img src="./images/product images/Guinea pig Cage Domestic rabbit Hutch Pocket pet.png" alt="">
+            <h4><b>Accessories & Treats</b></h4>
+          </div>
+        </div>
+        <div class="item-btn">
+            <button class="items-btn"><a href="./All-product-section.html">More Products</a></button>
+        </div>
+   </section>
+  <section>
+    <div class="service-image">
+      <img src="./images/brand-image/service-image.png" alt="image" class="service-image">
+    </div>
+    <h1>Popular <span>Brands</span></h1>
+  
+    <div class="popular-brands">
+         <div class="brand-item">
+            <img src="./images/brand-image/brand-1.jpg" alt="Brand 1">
+         </div>
+         <div class="brand-item">
+             <img src="./images/brand-image/brand-2.jpg" alt="Brand 2">
+         </div>
+         <div class="brand-item">
+            <img src="./images/brand-image/brand-3.jpg" alt="Brand 3">
+         </div>
+         <div class="brand-item">
+             <img src="./images/brand-image/brand-4.jpg" alt="Brand 4">
+         </div>
+         <div class="brand-item">
+            <img src="./images/brand-image/brand-5.jpg" alt="Brand 5">
+         </div>
+    </div>
+  
+    <h1>Services <span>& Support</span></h1>
+  
+    <div class="key-features">
+        <div class="feature-item">
+            <img src="./images/service&support images/service-icon-1.png" alt="">
+            <h3>Free Same-Day Delivery</h3>
+            <p>Place your order in the morning and get it  delivered the same night.</p>
+            <button class="read-more">Shop Now</button>
+        </div>
+        <div class="feature-item">
+            <img src="./images/service&support images/service-icon-2.png" alt="">
+            <h3>30 Day Return</h3>
+            <p>Enjoy 35% off your first order and an additional 5% off all future orders.</p>
+            <button class="read-more">Get Discount</button>
+        </div>
+        <div class="feature-item">
+            <img src="./images/service&support images/service-icon-3.png" alt="">
+            <h3>Secure Payment</h3>
+            <p>Receive 25% off your online order with secure payment options.</p>
+            <button class="read-more">Order Now</button>
+        </div>
+        <div class="feature-item">
+            <img src="./images/service&support images/service-icon-4.png" alt="">
+            <h3>24/7 Support</h3>
+            <p>Shop online and get orders over &#8377;100 shipped fast and free with 24/7 customer support.</p>
+            <button class="read-more">Shop Online</button>
+        </div>
+    </div><hr>
+    <h1><span>PET PARENTS</span> ALSO SEARCHED</h1>
+    <div class="searched-items">
+        <div class="searched-item"><a href="./All-product-section.html">Dog Food |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Dry Dog Food |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Cat Food |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Wet Cat Food |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Petsy Treats |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Royal Canin |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Petsy Deals |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Royal Canin Dog Food |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Pedigree Food |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Whiskas |</a></div> 
+        <div class="searched-item"><a href="./All-product-section.html">Cat Litter & Accessories |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Cat Toys |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Natural Treats |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Fun Toys |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">New Products |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Personalised Tags |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Dog Collars & Leashes |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Cat Harnesses |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Sheba Cat Food |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Pet Beds |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Carriers |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Bowls |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Clothing |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Pet Training |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Behavior |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Hygiene |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Dental Care |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Pet Travel |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Insurance |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Adoption |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Services |</a></div>
+        
+        <div class="searched-item"><a href="./All-product-section.html">Pet Wellness |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Nutrition |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Safety |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet First Aid |</a></div>
+        
+    
+        <div class="searched-item"><a href="./All-product-section.html">Pet GPS Trackers |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Subscription Boxes |</a></div>
+        <div class="searched-item"><a href="./All-product-section.html">Pet Toys |</a></div>
+    </div>
+  </section><hr>
+  <footer id="contact">
+    <h1><span>About &</span> Contact us</h1>
+    <div class="footer">
+        <div class="ai">
+          <h3>Pet Paradise</h3>
+          <p>If you have any questions, please contact   us at <a href="mailto:petparadisesupport@gmail.  com">Pet Paradise support@gmail.com</a></p>
+          <i class="fas fa-map-marker-alt"></i><a   href="location">30 Kavi Nagar St,
+          <br> Vanalour,
+          <br> OH 43062</a>
+          <i class="fas fa-phone"></i><a href="contact">  (+21)-6534-564-879</a>
+        </div>
+          <!-- Social media -->
+        <div class="logo">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-pinterest"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="style">
+          <h4>Corporate</h4>
+          <a href="./footer/careers.html">Careers</a><br>
+          <a href="./footer/about.html">About Us</a><br>
+          <a href="./footer/Contact Us.html">Contact Us</a><br>
+          <a href="./footer/FAQs.html">FAQs</a>
+        </div>
+        <div class="style">
+          <h4>Information</h4>
+          <a href="./footer/Online-Store.html">Online Store</a><br>
+          <a href="./footer/Privacy-Policy.html">Privacy Policy</a><br>
+          <a href="./footer/Refund-Policy.html">Refund Policy</a><br>
+          <a href="./footer/Track-Order.html">Track Order</a>
+        </div>
+        <div class="style">
+          <h4>Services</h4>
+          <a href="./footer/Grooming.html">Grooming</a><br>
+          <a href="./footer/Positive-Dog-Training.html">Positive Dog Training</a><br>
+          <a href="./footer/Pet-Adoption.html">Pet Adoption</a><br>
+          <a href="./footer/Resource-Center.html">Resource Center</a>
+        </div>
+    </div>
+    <hr>
+  <div class="end">
+    <div ><p class="p-center">@ 2023 Made with 🩷 by Code with Pet Paradise</p></div>
+  </div>
+  <div class="svg">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="bg">
+            <stop offset="0%" style="stop-color:rgba(255, 141, 10, 0.06)"></stop>
+            <stop offset="50%" style="stop-color:rgba(255, 141, 10, 0.6)"></stop>
+            <stop offset="100%" style="stop-color:rgba(255, 141, 10, 0.2)"></stop>
+          </linearGradient>
+          <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+          s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+        </defs>
+        <g>
+          <use xlink:href='#wave' opacity=".3">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="10s"
+              calcMode="spline"
+              values="270 230; -334 180; 270 230"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite" />
+          </use>
+          <use xlink:href='#wave' opacity=".6">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="8s"
+              calcMode="spline"
+              values="-270 230;243 220;-270 230"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite" />
+          </use>
+          <use xlink:href='#wave' opacity=".9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="6s"
+              calcMode="spline"
+              values="0 230;-140 200;0 230"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite" />
+          </use>
+        </g>
+      </svg>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

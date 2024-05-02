@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Sign Up - Pet Paradise</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(./image/offer-banner-1.jpg);
+      background-size: cover;
+      color: #333;
+    }
+
+    .form-container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container" id="form-container">
+    <h2 id="form-title">Login to Pet Paradise</h2>
+    <form id="login-form" action="#" method="post">
+      <label for="login-username">Username:</label>
+      <input type="text" id="login-username" name="username" required>
+
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    
+    <form id="signup-form" action="#" method="post" style="display: none;">
+      <h2 id="signup-title">Sign Up for Pet Paradise</h2>
+      <label for="signup-username">Username:</label>
+      <input type="text" id="signup-username" name="username" required>
+
+      <label for="signup-email">Email:</label>
+      <input type="email" id="signup-email" name="email" required>
+
+      <label for="signup-password">Password:</label>
+      <input type="password" id="signup-password" name="password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script>
+    
+    const isLoggedIn = false; // Set to true if user is logged in
+
+    function toggleForms() {
+      const loginForm = document.getElementById('login-form');
+      const signupForm = document.getElementById('signup-form');
+      const formTitle = document.getElementById('form-title');
+      const signupTitle = document.getElementById('signup-title');
+
+      if (isLoggedIn) {
+        loginForm.style.display = 'none';
+        signupForm.style.display = 'block';
+        formTitle.innerText = 'Sign Up to Pet Paradise';
+        signupTitle.style.display = 'block';
+      } else {
+        loginForm.style.display = 'block';
+        signupForm.style.display = 'none';
+        formTitle.innerText = 'Login to Pet Paradise';
+        signupTitle.style.display = 'none';
+      }
+    }
+
+    toggleForms();
+  </script>
+
+</body>
+</html>
